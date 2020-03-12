@@ -27,7 +27,7 @@ $(function(){
 
 $(function(){
     $('.shopping-list').on('click', '.shopping-item-toggle', function(event){
-        $(this).parent().parent().toggleClass('shopping-item__checked');
+        $(this).closest('li').children('.shopping-item').toggleClass('shopping-item__checked');
     });
 })
 
